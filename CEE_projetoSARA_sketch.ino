@@ -97,7 +97,7 @@ void loop() {
        digitalWrite(releUm, !digitalRead(releUm));
        }  
    
-     delay(delayfinal);     //Tempo de espera para continuar o programa, esse tempo é importante para evitar efeitos de possiveis detecções truncadas de ecos e reverberações no som. 
+     delay(delayfinal);     //Tempo de espera para continuar o programa, importante para evitar efeitos de possiveis detecções truncadas de ecos e reverberações no som. 
      quantidadePalmas = 0;  //Retoma a condição inicial da quantidade de palmas. 
    }
 
