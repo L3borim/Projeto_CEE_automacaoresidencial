@@ -21,9 +21,9 @@
 /**************************************** VARIÁVEIS ******************************************** */
 
 String voz;                 //Variável responsável por receber os dados de voz do usuário em forma de String.
-int delayfinal = 100;       //Valor representa um tempo em milissegundos, esse tempo é aguardado pelo programa para que se inicie novamente o loop.  
-int duracaoPalma = 200;     //Valor representa um tempo em milissegundos, é o tempo que dura o som de uma palma, precisa ser calibrado entre 100 e 250. 
-int intervaloPalmas = 500;  //Valor representa um tempo em milissegundos, é o intervalo máximo permitido entre uma sequência de palmas.  
+int delayfinal = 100;       //Representação de um tempo em milissegundos, esse tempo é aguardado pelo programa para que se inicie novamente o loop.  
+int duracaoPalma = 200;     //Representação de um tempo em milissegundos, é o tempo que dura o som de uma palma, precisa ser calibrado entre 100 e 250. 
+int intervaloPalmas = 500;  //Representação de um tempo em milissegundos, é o intervalo máximo permitido entre uma sequência de palmas.  
 int quantidadePalmas = 0;   //Quantidade de palmas registradas.
 long momentoPalma = 0;      //Marcador usado para a detecção das palmas, será utilizado junto com a função millis. 
 long esperaPalmas = 0;      //Marcador usado para contagem dos intervalos de tempo, será utilizado junto com a função millis. 
@@ -71,7 +71,7 @@ void loop() {
   //Faz a leitura digital do sensor de som, quando este sensor detecta som ele desliga a porta de entrada, mudando seu estado para LOW e quando não detecta mantem em HIGH.
   int leituraSom = digitalRead(sensorSom);
   
-  //Ações quando o sensor detectar som, ou seja, entrar em LOW. 
+  //Ações quando o sensor detectar som. 
   if (leituraSom == LOW) {
     
      //Marca o momento da palma, soma a quantidade de palmas e aguarda um intervalo para não marcar a mesma palma mais de uma vez. 
