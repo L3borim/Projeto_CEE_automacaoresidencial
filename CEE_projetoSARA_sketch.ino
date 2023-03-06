@@ -17,6 +17,7 @@
 
 //Pino de controle do sensor de som
 #define sensorSom 3
+#define teste 4
 
 /**************************************** VARIÁVEIS ******************************************** */
 
